@@ -1,0 +1,24 @@
+name = "final-legacy-worker"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[r2_buckets]]
+binding = "CASE_DOCUMENTS"
+bucket_name = "fl-case-documents"
+
+[[r2_buckets]]
+binding = "PRIVATE_VAULT"
+bucket_name = "fl-private-vault"
+
+[[r2_buckets]]
+binding = "UPLOADS"
+bucket_name = "fl-uploads"
+
+[[r2_buckets]]
+binding = "GENERATED_PDFS"
+bucket_name = "fl-generated-pdfs"
+
+[[r2_buckets]]
+binding = "PUBLIC_ASSETS"
+bucket_name = "fl-public-assets"
