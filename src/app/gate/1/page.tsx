@@ -47,7 +47,7 @@ export default function Gate1OverviewPage() {
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
             <path d="M10 12L6 8L10 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
-          Dashboard
+          Main Menu
         </button>
         <span style={{ fontSize: '15px', fontWeight: '700', color: '#4a9068' }}>Final Legacy</span>
         <div style={{ width: '80px' }} />
