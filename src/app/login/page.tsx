@@ -69,7 +69,7 @@ export default function LoginPage() {
             type="submit"
             disabled={loading}
             className="w-full rounded-md py-2.5 text-sm font-medium transition-colors disabled:opacity-50"
-            style={{backgroundColor: '#1a3d2b', color: '#f8f6f1'}}
+            style={{backgroundColor: '#4a9068', color: '#f8f6f1'}}
           >
             {loading ? 'Signing in...' : 'Sign in'}
           </button>
@@ -77,7 +77,7 @@ export default function LoginPage() {
 
         <p className="mt-6 text-sm text-center" style={{color: '#6b7280'}}>
           Don't have an account?{' '}
-          <a href="/signup" className="font-medium hover:underline" style={{color: '#1a3d2b'}}>
+          <a href="/signup" className="font-medium hover:underline" style={{color: '#4a9068'}}>
             Sign up
           </a>
         </p>
