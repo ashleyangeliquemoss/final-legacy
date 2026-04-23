@@ -10,7 +10,6 @@ export default function Gate1ReporterPage() {
   const [form, setForm] = useState({
     full_name: '',
     mobile: '',
-    email: '',
     relationship: '',
   })
 
@@ -78,18 +77,6 @@ export default function Gate1ReporterPage() {
                 type="tel"
                 name="mobile"
                 value={form.mobile}
-                onChange={handleChange}
-                required
-                style={{ width: '100%', border: '1px solid #e5e0d8', borderRadius: '6px', padding: '10px 12px', fontSize: '14px', color: '#1c1c1c', outline: 'none' }}
-              />
-            </div>
-
-            <div>
-              <label style={{ display: 'block', fontSize: '14px', fontWeight: '500', color: '#1c1c1c', marginBottom: '6px' }}>Email address</label>
-              <input
-                type="email"
-                name="email"
-                value={form.email}
                 onChange={handleChange}
                 required
                 style={{ width: '100%', border: '1px solid #e5e0d8', borderRadius: '6px', padding: '10px 12px', fontSize: '14px', color: '#1c1c1c', outline: 'none' }}
