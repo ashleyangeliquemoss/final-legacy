@@ -2,5 +2,7 @@ name = "final-legacy"
 compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat_v2"]
 pages_build_output_dir = ".open-next/assets"
+
+[vars]
 NEXT_PUBLIC_SUPABASE_URL = "https://rvkqwjvjxzwambzwiiql.supabase.co"
 NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ2a3F3anZqeHp3YW1iendpaXFsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY4NDczOTYsImV4cCI6MjA5MjQyMzM5Nn0.RQ47WVXkQnLmWZE5XGuCOl77xmVU7u1t2CndjHxrv-M"
