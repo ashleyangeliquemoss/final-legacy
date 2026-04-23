@@ -47,7 +47,7 @@ export default function LoginPage() {
               onChange={(e) => setEmail(e.target.value)}
               required
               className="w-full rounded-md px-3 py-2.5 text-sm focus:outline-none focus:ring-2"
-              style={{border: '1px solid #e5e0d8', color: '#1c1c1c', backgroundColor: '#ffffff', focusRingColor: '#1a3d2b'}}
+              style={{border: '1px solid #e5e0d8', color: '#1c1c1c', backgroundColor: '#ffffff'}}
             />
           </div>
 
