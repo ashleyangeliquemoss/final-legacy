@@ -4,13 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "NEXT_TURBOPACK=0 next build",
-    "cf-build": "npx @opennextjs/cloudflare@latest build && cp -r .open-next/cloudflare .open-next/assets/cloudflare && cp -r .open-next/middleware .open-next/assets/middleware && cp -r .open-next/.build .open-next/assets/.build && cp -r .open-next/server-functions .open-next/assets/server-functions && cp -r .next/static .open-next/assets/_next/static && cp .open-next/worker.js .open-next/assets/_worker.js",
+    "build": "next build",
+    "cf-build": "next build && npx @cloudflare/next-on-pages@1",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@opennextjs/cloudflare": "^1.19.3",
     "@supabase/ssr": "^0.10.2",
     "@supabase/supabase-js": "^2.49.4",
     "@tailwindcss/postcss": "^4.1.4",
@@ -19,6 +18,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
