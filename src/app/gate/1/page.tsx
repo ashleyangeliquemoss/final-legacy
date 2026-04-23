@@ -36,20 +36,28 @@ export default function Gate1OverviewPage() {
   ]
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#f8f6f1', padding: '40px 16px' }}>
-      <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+    <div style={{ minHeight: '100vh', backgroundColor: '#f8f6f1' }}>
+
+      {/* Top nav */}
+      <div style={{ backgroundColor: '#ffffff', borderBottom: '1px solid #e5e0d8', padding: '0 24px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'sticky', top: 0, zIndex: 50 }}>
+        <button
+          onClick={() => router.push('/dashboard')}
+          style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'none', border: '1px solid #e5e0d8', borderRadius: '6px', padding: '6px 14px', fontSize: '13px', fontWeight: '500', color: '#1c1c1c', cursor: 'pointer' }}
+        >
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+            <path d="M10 12L6 8L10 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+          Dashboard
+        </button>
+        <span style={{ fontSize: '15px', fontWeight: '700', color: '#4a9068' }}>Final Legacy</span>
+        <div style={{ width: '80px' }} />
+      </div>
+
+      <div style={{ maxWidth: '600px', margin: '0 auto', padding: '40px 16px' }}>
 
         {/* Header */}
         <div style={{ marginBottom: '32px' }}>
-          <button
-            onClick={() => router.push('/dashboard')}
-            style={{ background: 'none', border: 'none', color: '#6b7280', fontSize: '14px', cursor: 'pointer', padding: 0, marginBottom: '24px' }}
-          >
-            ← Back to dashboard
-          </button>
-          <div style={{ display: 'inline-block', backgroundColor: '#f0f7f3', border: '1px solid #c3dfd0', borderRadius: '6px', padding: '4px 12px', fontSize: '12px', fontWeight: '600', color: '#4a9068', marginBottom: '16px' }}>
-            EMERGENCY
-          </div>
+          <h3 style={{ fontSize: '13px', fontWeight: '600', letterSpacing: '0.08em', textTransform: 'uppercase', color: '#4a9068', margin: '0 0 12px 0' }}>Emergency</h3>
           <h1 style={{ fontSize: '28px', fontWeight: '600', color: '#1c1c1c', margin: '0 0 12px 0' }}>
             We're here to help
           </h1>
