@@ -47,7 +47,7 @@ export default function Gate1OverviewPage() {
           >
             ← Back to dashboard
           </button>
-          <div style={{ display: 'inline-block', backgroundColor: '#fef2f2', border: '1px solid #fecaca', borderRadius: '6px', padding: '4px 12px', fontSize: '12px', fontWeight: '600', color: '#dc2626', marginBottom: '16px' }}>
+          <div style={{ display: 'inline-block', backgroundColor: '#f0f7f3', border: '1px solid #c3dfd0', borderRadius: '6px', padding: '4px 12px', fontSize: '12px', fontWeight: '600', color: '#4a9068', marginBottom: '16px' }}>
             EMERGENCY
           </div>
           <h1 style={{ fontSize: '28px', fontWeight: '600', color: '#1c1c1c', margin: '0 0 12px 0' }}>
