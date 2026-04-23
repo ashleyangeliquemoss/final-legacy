@@ -3,13 +3,17 @@
 :root {
   --background: #f8f6f1;
   --surface: #ffffff;
-  --primary: #1a3d2b;
-  --primary-hover: #142e20;
+  --primary: #4a9068;
+  --primary-hover: #3a7d5a;
   --accent: #7a9e7e;
   --text-primary: #1c1c1c;
   --text-secondary: #6b7280;
   --border: #e5e0d8;
   --error: #c0392b;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -21,8 +25,82 @@ body {
 input, textarea, select {
   color: var(--text-primary);
   background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.15s;
 }
 
-input::placeholder {
+input:focus, textarea:focus, select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(74, 144, 104, 0.15);
+}
+
+input::placeholder, textarea::placeholder {
   color: var(--text-secondary);
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+button[type="submit"], .btn-primary {
+  background-color: var(--primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.15s;
+}
+
+button[type="submit"]:hover, .btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+button[type="submit"]:disabled, .btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.card {
+  background-color: var(--surface);
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  padding: 32px;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.error-text {
+  color: var(--error);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.link {
+  color: var(--primary);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
